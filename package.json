@@ -1,0 +1,44 @@
+{
+  "name": "admin-start-example",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "productName": "Quasar App",
+  "cordovaId": "org.cordova.quasar.app",
+  "capacitorId": "",
+  "author": "AriesZhao <3256893@qq.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.6.4",
+    "axios": "^0.18.1",
+    "quasar": "^1.9.14",
+    "vue-i18n": "^8.17.0"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.6.2",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.1.2",
+    "quasar-app-extension-admin-starter": "^0.0.8"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ],
+  "resolutions": {
+    "@babel/parser": "7.7.5"
+  }
+}
