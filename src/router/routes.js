@@ -8,8 +8,8 @@ const routes = [
     },
     children: [
       {
-        path: '',
-        meta: { title: 'Dashboard', tab: false, menu: false },
+        path: '/home',
+        meta: { title: 'Dashboard', menu: false },
         component: () => import('pages/Index.vue')
       },
       {

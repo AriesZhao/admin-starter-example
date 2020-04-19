@@ -1,18 +1,28 @@
 <template>
-  <admin-app :app-info="appInfo" />
+  <admin-app :app-info="appInfo">
+    <template v-slot:left-header="props">
+      <q-toolbar class="bg-primary text-white shadow-5">
+        <q-avatar>
+          <img src="/statics/app-logo-128x128.png" />
+        </q-avatar>
+        <q-toolbar-title style="font-size: 16px;">{{
+          props.appInfo.title
+        }}</q-toolbar-title>
+      </q-toolbar>
+    </template>
+  </admin-app>
 </template>
 
 <script>
 const appInfo = {
-  logo: '',
   title: 'Admin-Template',
-  showFooter: true,
+  homePath: '/home',
   siderWidth: 250,
   siderClass: 'bg-grey-3'
 }
 export default {
   name: 'App',
-  data () {
+  data() {
     return {
       appInfo: appInfo
     }
