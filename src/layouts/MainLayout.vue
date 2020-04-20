@@ -1,5 +1,5 @@
 <template>
-  <admin-app :app-info="appInfo">
+  <admin-app :app-info="appInfo" :sider-width="250" sider-class="bg-grey-3" home-path="/home" home-icon="home">
     <template v-slot:left-header="props">
       <q-toolbar class="bg-primary text-white shadow-5">
         <q-avatar>
@@ -16,9 +16,7 @@
 <script>
 const appInfo = {
   title: 'Admin-Template',
-  homePath: '/home',
-  siderWidth: 250,
-  siderClass: 'bg-grey-3'
+  homePath: '/home'
 }
 export default {
   name: 'App',

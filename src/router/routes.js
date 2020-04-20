@@ -9,7 +9,7 @@ const routes = [
     children: [
       {
         path: '/home',
-        meta: { title: 'Dashboard', menu: false },
+        meta: { title: 'AdminApp', menu: false },
         component: () => import('pages/Index.vue')
       },
       {
