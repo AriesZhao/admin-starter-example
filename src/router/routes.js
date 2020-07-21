@@ -50,6 +50,18 @@ const routes = [
             component: () => import('pages/Index.vue')
           }
         ]
+      },
+      {
+        path: 'components',
+        meta: { title: '组件' },
+        component: () => import('layouts/Blank.vue'),
+        children: [
+          {
+            path: 'tree',
+            meta: { title: '简单树' },
+            component: () => import('pages/TreeDemo.vue')
+          }
+        ]
       }
     ]
   }
