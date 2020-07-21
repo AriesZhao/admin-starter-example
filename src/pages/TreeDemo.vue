@@ -10,6 +10,7 @@
         />
       </template>
     </tree>
+    <hr/>
     <!--调用后台取得节点-->
     <tree title="测试节点2" :listFn="list" :saveFn="save">
       <template v-slot:editor="prop">
